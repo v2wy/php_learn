@@ -10,6 +10,8 @@ var_dump($case3, select_sort($case3));
 
 /**
  * 选择排序
+ * 第一层循环确定要交换的最小元素下标
+ * 第二层循环找到实际最小元素下标位置,找到后和要交换的最小下标元素做交换
  * @param $arr
  * @return mixed
  */

@@ -30,7 +30,6 @@ class QuickSort
 
     private function quick(&$arr, $left, $right)
     {
-//        echo $left . ' ' . $right . PHP_EOL;
         if ($left >= $right) {
             return;
         }

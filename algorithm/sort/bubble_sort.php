@@ -13,7 +13,8 @@ var_dump($case4, bubble_sort($case4));
 
 /**
  * 冒泡排序
- *
+ * 第一层循环确定最小元素下标
+ * 第二层循环从后往前把最小元素交换到最小下标位置
  * @param $arr
  * @return mixed
  */
