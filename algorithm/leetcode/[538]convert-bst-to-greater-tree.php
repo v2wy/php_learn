@@ -82,6 +82,7 @@ class Solution
      */
     function convertBST($root)
     {
+        //bst的性质:中序遍历是顺序 如果先遍历右子树 那么是降序
         $this->traverse($root);
         return $root;
     }
