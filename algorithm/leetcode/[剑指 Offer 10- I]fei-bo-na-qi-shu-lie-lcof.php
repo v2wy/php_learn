@@ -53,17 +53,17 @@ class Solution
             return 1;
         }
         //前面第二个
-        $fn[-2] = 0;
+        $lastSecond = 0;
         //前面第一个
-        $fn[-1] = 1;
+        $lastFirst = 1;
         for ($i = 2; $i <= $n; $i++) {
-            $fn[0] = ($fn[-1] + $fn[-2]) % 1000000007;
+            $cur = ($lastFirst + $lastSecond) % 1000000007;
 
-            $fn[-2] = $fn[-1];
-            $fn[-1] = $fn[0];
+            $lastSecond = $lastFirst;
+            $lastFirst = $cur;
         }
 
-        return $fn[0];
+        return $cur;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
